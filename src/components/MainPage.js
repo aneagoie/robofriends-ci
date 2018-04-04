@@ -5,6 +5,7 @@ import SearchBox from './SearchBox';
 import Scroll from './Scroll';
 import ErrorBoundry from './ErrorBoundry';
 import Header from './Header';
+import HeaderTwo from './HeaderTwo';
 
 export class MainPage extends Component {
   constructor() {
@@ -29,6 +30,7 @@ export class MainPage extends Component {
 
     return (
       <div className='tc'>
+        <HeaderTwo count={this.state.count}/>
         <Header count={this.state.count}/>
         <SearchBox searchChange={onSearchChange}/>
         <Scroll>
