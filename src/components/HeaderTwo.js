@@ -14,7 +14,6 @@ class HeaderTwo extends Component {
     return (
       <div>
         <h1 className="f1">RoboFriends2</h1>
-
         <CounterButton />
       </div>
     );
