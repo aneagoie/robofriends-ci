@@ -23,6 +23,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <HeaderTwo
+          count={1}
+/>,
         <Header
           count={1}
 />,
@@ -41,6 +44,17 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "count": 1,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -110,6 +124,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <HeaderTwo
+            count={1}
+/>,
           <Header
             count={1}
 />,
@@ -128,6 +145,17 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "count": 1,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
