@@ -2,7 +2,7 @@ version: 2
 jobs:
    build:
      docker:
-       - image: circleci/node:carbon-browsers
+       - image: circleci/node:8.9
      steps:
        - checkout
        - run: echo "hello world"
