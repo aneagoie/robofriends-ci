@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class CounterButton extends Component {
   constructor(props) {
     super(props);
-    this.state = {count: 5};
+    this.state = {count: 1};
   }
 
   shouldComponentUpdate(nextProps, nextState) {
