@@ -8,10 +8,7 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "fetch-mock": "^9.10.7",
     "gh-pages": "^3.1.0",
-    "husky": "^4.3.0",
     "nock": "^13.0.4",
-    "prettier": "^2.1.2",
-    "pretty-quick": "^3.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
@@ -43,5 +40,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "prettier": "2.1.2",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
