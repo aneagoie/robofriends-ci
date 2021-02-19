@@ -1,20 +1,20 @@
-version: 2
+version: 2.1
 jobs:
-  bobby:
+  labOne:
     docker:
       - image: cimg/node:15.9.0
     steps:
       - checkout
       - run: echo "a first hello"
-  sally:
+  labOne:
     docker:
       - image: cimg/node:15.9.0
     steps:
       - checkout
       - run: echo "a second hello"
 workflows:
-  version: 2
-  bobby_sally:
+  version: 2.1
+  containers-jobs:
     jobs:
-      - bobby
-      - sally
+      - labOne
+      - labTwo
