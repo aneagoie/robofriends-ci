@@ -1,19 +1,19 @@
-version: 2.1
+version: 2
 jobs:
   bobby:
     docker:
-      - image: circleci/node@3.0.0
+      - image: circleci/ruby@2.4.1
     steps:
       - checkout
       - run: echo "a first hello"
   sally:
     docker:
-      - image: circleci/node@3.0.0
+      - image: circleci/ruby@2.4.1
     steps:
       - checkout
       - run: echo "a second hello"
 workflows:
-  version: 2.1
+  version: 2
     bobby_sally:
       jobs:
         - bobby
