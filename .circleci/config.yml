@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: echo "a first hello"
-  labOne:
+  labTwo:
     docker:
       - image: cimg/node:15.9.0
     steps:
