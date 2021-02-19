@@ -2,13 +2,13 @@ version: 2
 jobs:
   bobby:
     docker:
-      - image: circleci/ruby@2.4.1
+      - image: cimg/node:15.9.0
     steps:
       - checkout
       - run: echo "a first hello"
   sally:
     docker:
-      - image: circleci/ruby@2.4.1
+      - image: cimg/node:15.9.0
     steps:
       - checkout
       - run: echo "a second hello"
