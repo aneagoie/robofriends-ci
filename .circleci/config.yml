@@ -18,19 +18,10 @@ jobs:
       - run: echo "testing stage."
       - run: npm install
       - run: npm test
-  importantJob:
-    docker:
-      - image: circleci/node:15.9.0
-    steps:
-      - checkout
-      - run: echo "last testing stage."
 # using workflows to schedule jobs.
 workflows:
   version: 2.1
-  build_test_lint:
+  build_test:
     jobs:
       - build
-      - importantJob
-      - test:
-        requires:
-          - importantJob
+      - test
