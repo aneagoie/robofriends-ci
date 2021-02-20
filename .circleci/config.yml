@@ -1,20 +1,36 @@
 version: 2.1
 jobs:
-  labOne:
+  # testing container environment one.
+  build:
     docker:
-      - image: cimg/node:15.9.0
+      - image: circleci/node:15.9.0
     steps:
       - checkout
       - run: echo "a first hello"
-  labTwo:
+      - run: npm install
+      - run: CI=true npm run build
+  # testing container environment two.
+  test:
     docker:
-      - image: cimg/node:15.9.0
+      - image: circleci/node:15.9.0
     steps:
       - checkout
-      - run: echo "a second hello"
+      - run: echo "testing stage."
+      - run: npm install
+      - run: npm test
+  importantJob:
+    docker:
+      - image: circleci/node:15.9.0
+    steps:
+      - checkout
+      - run: echo "last testing stage."
+# using workflows to schedule jobs.
 workflows:
   version: 2.1
-  containers-jobs:
+  build->test->lint:
     jobs:
-      - labOne
-      - labTwo
+      - build
+      - importantJob
+      - test:
+        requires:
+          - importantJob
