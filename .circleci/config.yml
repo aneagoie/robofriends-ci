@@ -27,7 +27,7 @@ jobs:
 # using workflows to schedule jobs.
 workflows:
   version: 2.1
-  build-test-lint:
+  build_test_lint:
     jobs:
       - build
       - importantJob
