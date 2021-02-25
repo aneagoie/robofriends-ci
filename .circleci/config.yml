@@ -19,7 +19,6 @@ jobs:
        - run: npm test
      
    hithere:
-
        - checkout
        - run: echo "Hellloooo!"
 workflows:
