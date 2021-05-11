@@ -13,6 +13,7 @@ jobs:
        - image: circleci/node:latest
      steps:
        - checkout
+       - run: echo "testing stuff"
        - run: npm install
        - run: npm run test
    hithere:
