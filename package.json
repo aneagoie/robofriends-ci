@@ -30,7 +30,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -45,6 +46,11 @@
     ]
   },
   "devDependencies": {
-    "@cfaester/enzyme-adapter-react-18": "^0.7.1"
+    "@cfaester/enzyme-adapter-react-18": "^0.7.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
