@@ -15,7 +15,7 @@
     "gh-pages": "^6.1.1",
     "nock": "^13.5.5",
     "react": "^19.0.0",
-    "react-dom": "^^19.0.0",
+    "react-dom": "^19.0.0",
     "react-redux": "^9.1.2",
     "react-scripts": "^5.0.1",
     "redux": "^5.0.1",
